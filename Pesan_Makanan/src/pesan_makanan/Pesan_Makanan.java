@@ -28,11 +28,12 @@ public class Pesan_Makanan {
         for(String b = "y"; b.equals("y") || b.equals("Y");){
 
         Scanner makanan = new Scanner(System.in);   //scanner
+        Scanner makanan2 = new Scanner (System.in); //scanner
        
         System.out.print("pesanan : ");        //untuk menginput pilihan menu
         a = makanan.nextInt();
 
-        //seleksi jika pilihan = n
+       
         if(a == 1){
             System.out.println("Nasi Goreng    : 10000");
             bayar = bayar + 100000;
@@ -47,11 +48,11 @@ public class Pesan_Makanan {
             bayar = bayar + 10000;
         }else{
             System.out.println("Maaf Menu Kami Hanya Ada 4, Terimakasih");
-           //jika salah memasukkan input selain 1-4
+       
         }
 
         System.out.print("Input lagi? (Y/T) "); 
-        //untuk menginput apakah inhin memilih lagi atau tidak
+      
         b = makanan.next();
 
         }
