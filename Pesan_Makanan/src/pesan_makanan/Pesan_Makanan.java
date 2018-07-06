@@ -10,18 +10,20 @@ import java.util.Scanner;
 public class Pesan_Makanan {
     public static void main(String[] args) {
 
-        int a = 0;     
-        int bayar = 0;  
+        int a = 0; 
+        int c = 0;
+        int bayar = 0;
+        
 
-        System.out.println("   SELAMAT DATANG  ");      //menampilkan
-        System.out.println(" __________________");      //menampilkan
-        System.out.println("|Pemesanan Makanan|");     //Judul
-        System.out.println(".-----------------.");     //makanan
-        System.out.println("|1. Nasi Goreng   |");     //Nasi goreng
-        System.out.println("|2. Seblak Jamur  |");     //Seblak jamur
-        System.out.println("|3. Es Kepal      |");     //Es kepal
-        System.out.println("|4. Telor itik    |");     //Telor Itik
-        System.out.println("|_________________|");
+        System.out.println("      SELAMAT DATANG       ");      //menampilkan
+        System.out.println(" __________________________");      //menampilkan
+        System.out.println("|     Pemesanan Makanan   |");     //Judul
+        System.out.println(".-------------------------.");     //makanan
+        System.out.println("|1. Nasi Goreng   (10.000)|");     //Nasi goreng
+        System.out.println("|2. Seblak Jamur  (10.000)|");     //Seblak jamur
+        System.out.println("|3. Es Kepal      (15.000)|");     //Es kepal
+        System.out.println("|4. Telor itik    (10.000)|");     //Telor Itik
+        System.out.println("|_________________________|");
         System.out.println("");
 
       
@@ -29,14 +31,18 @@ public class Pesan_Makanan {
 
         Scanner makanan = new Scanner(System.in);   //scanner
         Scanner makanan2 = new Scanner (System.in); //scanner
+        
        
         System.out.print("pesanan : ");        //untuk menginput pilihan menu
         a = makanan.nextInt();
+       
+        
+ 
 
        
         if(a == 1){
             System.out.println("Nasi Goreng    : 10000");
-            bayar = bayar + 100000;
+            bayar = bayar * 100000;
         }else if(a==2){
             System.out.println("Seblak Jamur   : 10000");
             bayar = bayar + 10000;
