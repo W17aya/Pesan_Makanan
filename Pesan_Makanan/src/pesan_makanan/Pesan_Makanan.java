@@ -5,14 +5,16 @@ import java.util.Scanner;
 
 /**
  *
- * @author ASUS
+ * @author W17aya
  */
 public class Pesan_Makanan {
     public static void main(String[] args) {
 
         int a = 0; 
         int c = 0;
+        int d;
         int bayar = 0;
+        
         
 
         System.out.println("      SELAMAT DATANG       ");      //menampilkan
@@ -35,23 +37,24 @@ public class Pesan_Makanan {
        
         System.out.print("pesanan : ");        //untuk menginput pilihan menu
         a = makanan.nextInt();
-       
+        System.out.print("Jumlah :  ");       // untuk menginput jumlah pesanan
+        d = makanan2.nextInt();
         
  
 
        
         if(a == 1){
             System.out.println("Nasi Goreng    : 10000");
-            bayar = bayar * 100000;
+            bayar = d * 100000;
         }else if(a==2){
             System.out.println("Seblak Jamur   : 10000");
-            bayar = bayar + 10000;
+            bayar = d * 10000;
         }else if(a==3){
             System.out.println("Es kepal       : 15000");
-            bayar = bayar + 15000;
+            bayar = d * 15000;
             }else if(a==4){
             System.out.println("Telor itik     : 10000");
-            bayar = bayar + 10000;
+            bayar = d * 10000;
         }else{
             System.out.println("Maaf Menu Kami Hanya Ada 4, Terimakasih");
        
