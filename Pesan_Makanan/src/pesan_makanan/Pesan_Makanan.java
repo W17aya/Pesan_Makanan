@@ -45,10 +45,10 @@ public class Pesan_Makanan {
        
         if(a == 1){
             System.out.println("Nasi Goreng    : 10000");
-            bayar = d * 100000;
+            bayar = d *10000;
         }else if(a==2){
             System.out.println("Seblak Jamur   : 10000");
-            bayar = d * 10000;
+            bayar = d *10000;
         }else if(a==3){
             System.out.println("Es kepal       : 15000");
             bayar = d * 15000;
